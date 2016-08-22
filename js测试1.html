@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> new document </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+    <script type="text/javascript">
+
+        function openWindow(){
+            var opn=confirm("are you sure?");
+            if(opn==true){
+                var url=prompt("web","http：//www.imooc.com/")
+                if(url!=null){
+                    window.open('url','_blank','width=400,height=500')
+                }
+                else{alert("bye")}
+            }
+            else{alert("bye")}
+        }
+
+    </script>
+</head>
+<body>
+<input type="button" value="新窗口打开网站" onclick="openWindow()" />
+</body>
+</html>
