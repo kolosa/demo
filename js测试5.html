@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> 事件</title>
+    <title> calculator</title>
     <script type="text/javascript">
         function count(){
             var num1=document.getElementById("txt1").value
@@ -9,7 +9,7 @@
             var js=document.getElementById("select").value
             switch(js){
                 case"+":
-                    result=parseFloat(num1)+parseFloat(num2);
+                    result=+num1+(+num2);
                     break;
                 case"-":
                     result=num1-num2;
