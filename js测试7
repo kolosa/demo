@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浏览器对象</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<!--先编写好网页布局-->
+<h1>操作成功</h1>
+<p><span id="js"></span>秒后返回到主页<a href="http://github.com/">返回</a></p>
+
+
+<script type="text/javascript">
+    var num=5
+    function clock(){
+        document.getElementById("js").innerHTML=num;
+        num=num-1
+        if(num==0){
+            window.location="http://github.com/";
+        }
+    }
+    setInterval("clock()",1000)
+
+
+</script>
+</body>
+</html>
