@@ -16,13 +16,13 @@
                 }
             }
         }
-        // 编写一个函数，供添加按钮调用，动态在表格的最后一行添加子节点；
+    
       function addrow(){
           var last=document.getElementById("table").lastChild;
           var adtr=document.createElement("tr")
           var adtd1=document.createElement("td")
           adtd1.innerHTML="<input type = 'text' />";
-          adtr.appendChild(adtd);
+          adtr.appendChild(adtd1);
 
           var adtd2=document.createElement("td")
           adtd2.innerHTML="<input type='text'>"
